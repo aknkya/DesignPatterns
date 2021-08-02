@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Creational.Person;
 import com.company.Creational.Prototype;
 import com.company.Creational.Singleton;
 
@@ -10,7 +11,7 @@ public class Main {
       Singleton sign2=Singleton.getins();
 
       sign.setS("hello");
-      sign2.setS("hgelasdasd");
+
       System.out.println(sign.getS());
       System.out.println(sign2.getS());
 
@@ -20,5 +21,12 @@ public class Main {
         prototype1.setAlan1("merhaba");
         System.out.println(prototype.getAlan1()+prototype.getAlan2());
         System.out.println(prototype1.getAlan1()+prototype1.getAlan2());
+
+
+    Person person= new Person.PersonBuilder("akin","kaya",15).build();
+
+
+
+
     }
 }
